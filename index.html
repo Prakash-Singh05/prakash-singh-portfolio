@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakash Singh | Professional Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+
+<body class="light-theme">
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    
+    <!-- Mobile Menu -->
+     <div class="mobile-menu" id="mobileMenu">
+        <div class="flex justify-end mb-8">
+            <button class="theme-toggle" id="mobileMenuClose">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        <nav class="space-y-6">
+            <a href="#home" class="block text-xl font-semibold nav-link">Home</a>
+            <a href="#about" class="block text-xl font-semibold nav-link">About</a>
+            <a href="#experience" class="block text-xl font-semibold nav-link">Experience</a>
+            <a href="#projects" class="block text-xl font-semibold nav-link">Projects</a>
+            <a href="#contact" class="block text-xl font-semibold nav-link">Contact</a>
+        </nav>
+        <div class="mt-10">
+            <h4 class="font-semibold mb-4 text-center">Follow Me</h4>
+            <div class="flex justify-center space-x-4">
+                <a href="https://github.com/Prakash-Singh05" class="social-icon github">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/prakash-singh-46359a363" class="social-icon linkedin">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="#" class="social-icon twitter">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a href="https://www.instagram.com/prakashsingh0511" class="social-icon instagram">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <a href="#home" class="text-2xl font-bold">
+                    <span class="text-gradient">Prakash Singh</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+                
+                <!-- Theme Toggle & Mobile Menu -->
+                <div class="flex items-center space-x-4">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon text-lg"></i>
+                    </button>
+                    <button class="theme-toggle md:hidden" id="mobileMenuButton">
+                        <i class="fas fa-bars text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div class="order-2 lg:order-1" data-aos="fade-right" data-aos-duration="1000">
+                    <p class="text-lg font-medium mb-4 opacity-75">Hello, I'm</p>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                        <span class="text-gradient">Prakash Singh</span>
+                    </h1>
+                    <div class="text-2xl md:text-3xl font-semibold mb-6 h-12 flex items-center">
+                        <span id="typedText" class="text-gradient"></span>
+                        <span class="animate-pulse ml-1">|</span>
+                    </div>
+                    <p class="text-lg mb-8 opacity-90 max-w-xl leading-relaxed">
+                        Passionate frontend developer creating exceptional digital experiences with modern technologies and user-centered design principles.
+                    </p>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </button>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/Prakash-Singh05" class="social-icon github">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/prakash-singh-46359a363" class="social-icon linkedin">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="social-icon twitter">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/prakashsingh0511" class="social-icon instagram">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Hero Image -->
+                <div class="order-1 lg:order-2 flex justify-center" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="hero-image floating">
+                        <img src="images/my_img.png" alt="Prakash Singh" class="w-full h-full object-cover">
+                        <div class="absolute -bottom-4 -right-4 w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-lg">
+                            <i class="fas fa-code text-white text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="text-gradient">About Me</span>
+                </h2>
+                <p class="text-lg opacity-75 max-w-2xl mx-auto">
+                    Discover my journey, skills, and passion for creating amazing digital experiences
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Who am I -->
+                <div class="card p-8 text-center bg-gradient-to-br from-indigo-500 to-purple-500">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-r from-indigo-500 to-violet-500 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Who Am I?</h3>
+                    <p class="opacity-75 leading-relaxed text-center">
+                       I'm a Full-Stack Python Developer with a passion for creating efficient and user-friendly applications.
+                    </p>
+                </div>
+                
+                <!-- What I Do -->
+                <div class="card p-8 text-center bg-gradient-to-br from-indigo-500 to-purple-500">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-r from-indigo-500 to-violet-500 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-laptop-code text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">What I Do</h3>
+                    <p class="opacity-75 leading-relaxed">
+                     I aim to continuously enhance my skills and contribute to innovative projects that make a meaningful impact.
+                    </p>
+                </div>
+                
+                <!-- My Goals -->
+                <div class="card p-8 text-center bg-gradient-to-br from-indigo-500 to-purple-500">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-r from-indigo-500 to-violet-500 flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-rocket text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">My Goals</h3>
+                    <p class="opacity-75 leading-relaxed">
+                        To stay at the cutting edge of web technology and help businesses achieve their digital transformation goals.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Skills Section -->
+            <div data-aos="fade-up" data-aos-delay="400">
+                <h3 class="text-4xl font-bold text-center mb-8"><p class="text-gradient">Technical Skills</p></h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Frontend -->
+                    <div class="space-y-4">
+                        <h4 class="font-semibold text-lg">Frontend</h4>
+                        <div class="space-y-2">
+                            <div class="skill-tag">
+                                <i class="fab fa-html5 text-orange-500"></i>
+                                HTML5
+                            </div>
+                            <div class="skill-tag">
+                                <i class="fab fa-css3-alt text-blue-500"></i>
+                                CSS3/SCSS
+                            </div>
+                            <div class="skill-tag">
+                                <i class="fab fa-js-square text-yellow-500"></i>
+                                JavaScript
+                            </div>
+                            <div class="skill-tag">
+                                <i class="fab fa-react text-blue-400"></i>
+                                React.js
+                            </div>
+                            <div class="skill-tag">
+                                <i class="fab fa-vuejs text-green-500"></i>
+                                Vue.js
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Styling -->
+                    <div class="space-y-4">
+                        <h4 class="font-semibold text-lg">Styling</h4>
+                        <div class="space-y-2">
+                            <div class="skill-tag">
+                                <i class="fas fa-wind text-cyan-500"></i>
+                                Tailwind CSS
+                            </div>
+                            <div class="skill-tag">
+                                <i class="fab fa-bootstrap text-purple-500"></i>
+                                Bootstrap
+                            </div>
+                            <div class="skill-tag">
+                                <i class="fab fa-sass text-pink-500"></i>
+                                Sass/SCSS
+                            </div>
+                            <div class="skill-tag">
+                                <i class="fas fa-mobile-alt text-blue-500"></i>
+                                Responsive Design
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Backend -->
+                    <div class="space-y-4">
+                        <h4 class="font-semibold text-lg">Backend</h4>
+                        <div class="space-y-2">
+                            <div class="skill-tag">
+                                <i class="fab fa-node-js text-green-500"></i>
+                                Node.js
+                            </div>
+                            <div class="skill-tag">
+                                <i class="fas fa-server text-gray-500"></i>
+                                Express.js
+                            </div>
+                            <div class="skill-tag">
+                                <i class="fas fa-database text-blue-500"></i>
+                                MongoDB
+                            </div>
+                            <div class="skill-tag">
+                                <i class="fas fa-fire text-orange-500"></i>
+                                Firebase
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tools -->
+                    <div class="space-y-4">
+                        <h4 class="font-semibold text-lg">Tools</h4>
+                        <div class="space-y-2">
+                            <div class="skill-tag">
+                                <i class="fab fa-git-alt text-orange-500"></i>
+                                Git/GitHub
+                            </div>
+                            <div class="skill-tag">
+                                <i class="fab fa-figma text-purple-500"></i>
+                                Figma
+                            </div>
+                            <div class="skill-tag">
+                                <i class="fas fa-cube text-blue-500"></i>
+                                Webpack
+                            </div>
+                            <div class="skill-tag">
+                                <i class="fab fa-npm text-red-500"></i>
+                                NPM/Yarn
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-4xl font-bold mb-4">
+                    <span class="text-gradient">Experience</span>
+                </h2>
+                <p class="text-lg opacity-75 max-w-2xl mx-auto">
+                    My professional journey and educational background
+                </p>
+            </div>
+            
+            <!-- Work Experience -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold mb-8 text-center" data-aos="fade-up">Work Experience</h3>
+                <div class="timeline">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline-dot"></div>
+                        <div class="card p-6">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                                <div>
+                                    <h4 class="text-xl font-bold">Senior Frontend Developer</h4>
+                                    <p class="opacity-75">Tech Innovations Inc.</p>
+                                </div>
+                                <span class="text-indigo-500 font-medium">2020 - Present</span>
+                            </div>
+                            <p class="opacity-75 mb-4 leading-relaxed">
+                                Led a team of 5 developers in creating responsive web applications. Implemented modern best practices and improved performance metrics by 40%. Mentored junior developers and conducted code reviews.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">React.js</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">Redux</span>
+                                <span class="skill-tag">Tailwind CSS</span>
+                                <span class="skill-tag">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience 2 -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline-dot"></div>
+                        <div class="card p-6">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                                <div>
+                                    <h4 class="text-xl font-bold">Frontend Developer</h4>
+                                    <p class="opacity-75">WebSolutions Co.</p>
+                                </div>
+                                <span class="text-indigo-500 font-medium">2018 - 2020</span>
+                            </div>
+                            <p class="opacity-75 mb-4 leading-relaxed">
+                                Developed and maintained client websites and applications. Collaborated with design team to implement pixel-perfect, responsive layouts. Optimized applications for maximum speed and scalability.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">Vue.js</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">SASS</span>
+                                <span class="skill-tag">Webpack</span>
+                                <span class="skill-tag">REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience 3 -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="timeline-dot"></div>
+                        <div class="card p-6">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                                <div>
+                                    <h4 class="text-xl font-bold">Junior Web Developer</h4>
+                                    <p class="opacity-75">Digital Agency XYZ</p>
+                                </div>
+                                <span class="text-indigo-500 font-medium">2016 - 2018</span>
+                            </div>
+                            <p class="opacity-75 mb-4 leading-relaxed">
+                                Created and maintained websites for various clients using modern web technologies. Assisted in troubleshooting cross-browser compatibility issues and implementing responsive designs.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">jQuery</span>
+                                <span class="skill-tag">Bootstrap</span>
+                                <span class="skill-tag">PHP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Education -->
+            <div>
+                <h3 class="text-3xl font-bold mb-8 text-center" data-aos="fade-up">Education</h3>
+                <div class="timeline">
+                    <!-- Education 1 -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline-dot"></div>
+                        <div class="card p-6">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                                <div>
+                                    <h4 class="text-xl font-bold">Master of Computer Science</h4>
+                                    <p class="opacity-75">University of Technology</p>
+                                </div>
+                                <span class="text-indigo-500 font-medium">2014 - 2016</span>
+                            </div>
+                            <p class="opacity-75">
+                                Specialized in Web Technologies and User Interface Design. Graduated with honors. 
+                                Thesis: "Modern Frontend Frameworks and User Experience Optimization"
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Education 2 -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline-dot"></div>
+                        <div class="card p-6">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                                <div>
+                                    <h4 class="text-xl font-bold">Bachelor of Computer Science</h4>
+                                    <p class="opacity-75">State University</p>
+                                </div>
+                                <span class="text-indigo-500 font-medium">2010 - 2014</span>
+                            </div>
+                            <p class="opacity-75">
+                                Focused on Software Development and Database Systems. Participated in various coding competitions and hackathons. 
+                                President of the Computer Science Club.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="text-gradient">Featured Projects</span>
+                </h2>
+                <p class="text-lg opacity-75 max-w-2xl mx-auto">
+                    A collection of my recent work showcasing various technologies and design patterns
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card card overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 bg-gradient-to-br from-indigo-500 to-red-500 flex items-center justify-center">
+                        <i class="fas fa-chart-line text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">E-Commerce Dashboard</h3>
+                        <p class="opacity-75 mb-4 leading-relaxed">
+                            A responsive admin dashboard for e-commerce platforms with analytics, inventory management, and order processing capabilities.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="skill-tag text-xs">React</span>
+                            <span class="skill-tag text-xs">Redux</span>
+                            <span class="skill-tag text-xs">Chart.js</span>
+                            <span class="skill-tag text-xs">Tailwind</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-indigo-500 hover:text-indigo-400 font-medium flex items-center gap-1">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/Prakash-Singh05" class="text-indigo-500 hover:text-indigo-400 font-medium flex items-center gap-1">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="text-center text-white">
+                            <div class="flex gap-4">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Live
+                                </a>
+                                <a href="https://github.com/Prakash-Singh05" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i>
+                                    Source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card card overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 bg-gradient-to-br from-red-500 to-purple-500 flex items-center justify-center">
+                        <i class="fas fa-palette text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Portfolio Template</h3>
+                        <p class="opacity-75 mb-4 leading-relaxed">
+                            A customizable portfolio template with smooth animations, responsive design, and dark/light theme toggle functionality.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="skill-tag text-xs">HTML5</span>
+                            <span class="skill-tag text-xs">CSS3</span>
+                            <span class="skill-tag text-xs">JavaScript</span>
+                            <span class="skill-tag text-xs">AOS</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-indigo-500 hover:text-indigo-400 font-medium flex items-center gap-1">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/Prakash-Singh05" class="text-indigo-500 hover:text-indigo-400 font-medium flex items-center gap-1">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="text-center text-white">
+                            <div class="flex gap-4">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Live
+                                </a>
+                                <a href="https://github.com/Prakash-Singh05" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i>
+                                    Source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card card overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 bg-gradient-to-br from-pink-500 to-yellow-400 flex items-center justify-center">
+                        <i class="fas fa-comments text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Real-time Chat App</h3>
+                        <p class="opacity-75 mb-4 leading-relaxed">
+                            A modern chat application with real-time messaging, user authentication, file sharing, and responsive design.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="skill-tag text-xs">Vue.js</span>
+                            <span class="skill-tag text-xs">Socket.io</span>
+                            <span class="skill-tag text-xs">Node.js</span>
+                            <span class="skill-tag text-xs">MongoDB</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-indigo-500 hover:text-indigo-400 font-medium flex items-center gap-1">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/Prakash-Singh05" class="text-indigo-500 hover:text-indigo-400 font-medium flex items-center gap-1">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="text-center text-white">
+                            <div class="flex gap-4">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Live
+                                </a>
+                                <a href="https://github.com/Prakash-Singh05" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i>
+                                    Source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card card overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 bg-gradient-to-br from-yellow-500 to-red-500 flex items-center justify-center">
+                        <i class="fas fa-tasks text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Task Management</h3>
+                        <p class="opacity-75 mb-4 leading-relaxed">
+                            A productivity app with drag-and-drop interface, task prioritization, team collaboration, and progress tracking.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="skill-tag text-xs">React</span>
+                            <span class="skill-tag text-xs">DnD Kit</span>
+                            <span class="skill-tag text-xs">Firebase</span>
+                            <span class="skill-tag text-xs">Material-UI</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-indigo-500 hover:text-indigo-400 font-medium flex items-center gap-1">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/Prakash-Singh05" class="text-indigo-500 hover:text-indigo-400 font-medium flex items-center gap-1">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="text-center text-white">
+                            <div class="flex gap-4">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Live
+                                </a>
+                                <a href="https://github.com/Prakash-Singh05" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i>
+                                    Source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card card overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                        <i class="fas fa-film text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Movie Recommendation</h3>
+                        <p class="opacity-75 mb-4 leading-relaxed">
+                            An AI-powered movie recommendation system with personalized suggestions, reviews, and watchlist management.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="skill-tag text-xs">Vue.js</span>
+                            <span class="skill-tag text-xs">Express</span>
+                            <span class="skill-tag text-xs">MongoDB</span>
+                            <span class="skill-tag text-xs">ML.js</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-indigo-500 hover:text-indigo-400 font-medium flex items-center gap-1">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/Prakash-Singh05" class="text-indigo-500 hover:text-indigo-400 font-medium flex items-center gap-1">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="text-center text-white">
+                            <div class="flex gap-4">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Live
+                                </a>
+                                <a href="https://github.com/Prakash-Singh05" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i>
+                                    Source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card card overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 bg-gradient-to-br from-pink-500 to-red-500 flex items-center justify-center">
+                        <i class="fas fa-shopping-cart text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">E-commerce Platform</h3>
+                        <p class="opacity-75 mb-4 leading-relaxed">
+                            A full-featured e-commerce website with product catalog, cart functionality, secure payments, and admin panel.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="skill-tag text-xs">React</span>
+                            <span class="skill-tag text-xs">Node.js</span>
+                            <span class="skill-tag text-xs">Stripe</span>
+                            <span class="skill-tag text-xs">PostgreSQL</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-indigo-500 hover:text-indigo-400 font-medium flex items-center gap-1">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/Prakash-Singh05" class="text-indigo-500 hover:text-indigo-400 font-medium flex items-center gap-1">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="text-center text-white">
+                            <div class="flex gap-4">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Live
+                                </a>
+                                <a href="https://github.com/Prakash-Singh05" class="btn btn-secondary">
+                                    <i class="fab fa-github"></i>
+                                    Source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="https://github.com/Prakash-Singh05" class="btn btn-primary">
+                    <i class="fab fa-github"></i>
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="text-gradient">Get In Touch</span>
+                </h2>
+                <p class="text-lg opacity-75 max-w-2xl mx-auto">
+                    Have a project in mind? Let's discuss how we can work together to bring your ideas to life.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <div class="card p-8 h-full">
+                        <h3 class="text-2xl font-bold mb-8">Let's Connect</h3>
+                        
+                        <div class="space-y-6 mb-8">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Email</h4>
+                                    <p class="opacity-75">prakash05@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Phone</h4>
+                                    <p class="opacity-75">+91 7088607716</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Location</h4>
+                                    <p class="opacity-75">66-White field Banglor </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold mb-4">Follow Me</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://github.com/Prakash-Singh05" class="social-icon github">
+                                    <i class="fab fa-github text-xl"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/prakash-singh-46359a363" class="social-icon linkedin">
+                                    <i class="fab fa-linkedin text-xl"></i>
+                                </a>
+                                <a href="#" class="social-icon twitter">
+                                    <i class="fab fa-twitter text-xl"></i>
+                                </a>
+                                <a href="https://www.instagram.com/prakashsingh0511" class="social-icon instagram">
+                                    <i class="fab fa-instagram text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div data-aos="fade-left" data-aos-duration="1000">
+                    <div class="card p-8">
+                        <h3 class="text-2xl font-bold mb-6">Send Message</h3>
+                        
+                        <form class="space-y-6" id="contactForm">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block font-medium mb-2 opacity-75">Your Name</label>
+                                    <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:outline-none focus:border-indigo-500 transition-colors" placeholder="John Doe" required>
+                                </div>
+                                <div>
+                                    <label class="block font-medium mb-2 opacity-75">Your Email</label>
+                                    <input type="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-purple-800 outline-none focus:border-indigo-500 transition-colors" placeholder="prakashsingh@gmail.com" required>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block font-medium mb-2 opacity-75">Subject</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:outline-none focus:border-indigo-500 transition-colors" placeholder="Project Inquiry" required>
+                            </div>
+                            
+                            <div>
+                                <label class="block font-medium mb-2 opacity-75">Message</label>
+                                <textarea rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:outline-none focus:border-indigo-500 transition-colors resize-none" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary w-full">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gray-200 dark:border-gray-700">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center">
+                <div class="mb-6">
+                    <h3 class="text-2xl font-bold">
+                        <span class="text-gradient">Prakash Singh</span>
+                    </h3>
+                    <p class="opacity-75 mt-2">Full Stack Engineer</p>
+                </div>
+                
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="#home" class="opacity-75 hover:opacity-100 transition-opacity">Home</a>
+                    <a href="#about" class="opacity-75 hover:opacity-100 transition-opacity">About</a>
+                    <a href="#experience" class="opacity-75 hover:opacity-100 transition-opacity">Experience</a>
+                    <a href="#projects" class="opacity-75 hover:opacity-100 transition-opacity">Projects</a>
+                    <a href="#contact" class="opacity-75 hover:opacity-100 transition-opacity">Contact</a>
+                </div>
+                
+                <div class="flex justify-center space-x-4 mb-8">
+                    <a href="https://github.com/Prakash-Singh05" class="social-icon github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/prakash-singh-46359a363" class="social-icon linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-icon twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/prakashsingh0511" class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                
+                <div class="text-sm opacity-50">
+                    &copy; <span id="currentYear"></span> Prakash Singh. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js">
+       
+    </script>
+</body>
+</html>
