@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prakash Singh | Professional Portfolio</title>
+    <title>Prakash Singh</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
@@ -20,7 +20,7 @@
     
     <!-- Mobile Menu -->
      <div class="mobile-menu" id="mobileMenu">
-        <div class="flex justify-end mb-8">
+        <div class="flex justify-end mb-1">
             <button class="theme-toggle" id="mobileMenuClose">
                 <i class="fas fa-times text-xl"></i>
             </button>
@@ -54,15 +54,16 @@
 
     <!-- Header -->
     <header class="header" id="header">
-        <div class="container mx-auto px-4 lg:px-8">
-            <div class="flex items-center justify-between py-4">
+        <div class="container  px-8 lg:px-8">
+            <div class="flex items-center justify-between">
                 <!-- Logo -->
                 <a href="#home" class="text-2xl font-bold">
-                    <span class="text-gradient">Prakash Singh</span>
+                    <img src="images/logo.png" alt="logo" width="120px" height="40px" class="logo" margin="0" style="padding: 0;margin: 0;">
+                    <img src="images/logo1.png" alt="logo" width="120px" height="40px" class="logo1" margin="0">
                 </a>
                 
                 <!-- Desktop Navigation -->
-                <nav class="hidden md:flex items-center space-x-8">
+                <nav class="hidden md:flex items-center space-x-12">
                     <a href="#home" class="nav-link active">Home</a>
                     <a href="#about" class="nav-link">About</a>
                     <a href="#experience" class="nav-link">Experience</a>
@@ -78,6 +79,7 @@
                     <button class="theme-toggle md:hidden" id="mobileMenuButton">
                         <i class="fas fa-bars text-lg"></i>
                     </button>
+                    
                 </div>
             </div>
         </div>
@@ -89,16 +91,16 @@
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <!-- Content -->
                 <div class="order-2 lg:order-1" data-aos="fade-right" data-aos-duration="1000">
-                    <p class="text-lg font-medium mb-4 opacity-75">Hello, I'm</p>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                        <span class="text-gradient">Prakash Singh</span>
+                    <p class="text-lg font-medium mb-4 opacity-75 my-name text-2xl">Hello, I'm</p>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 my-name">
+                        <span class="text-gradient" >Prakash Singh</span>
                     </h1>
-                    <div class="text-2xl md:text-3xl font-semibold mb-6 h-12 flex items-center">
-                        <span id="typedText" class="text-gradient"></span>
-                        <span class="animate-pulse ml-1">|</span>
+                    <div class="text-2xl md:text-3xl font-semibold mb-6 h-12 flex justify-center md:justify-start">
+                        <span id="typedText" class="text-gradient my-name"></span>
+                        <span class="animate-pulse ml-1 my-name">|</span>
                     </div>
                     <p class="text-lg mb-8 opacity-90 max-w-xl leading-relaxed">
-                        Passionate frontend developer creating exceptional digital experiences with modern technologies and user-centered design principles.
+                      Full-stack Engineer crafting exceptional digital experiences with expertise in frontend, backend, cloud, and user-centered design.
                     </p>
                     
                     <!-- CTA Buttons -->
@@ -249,16 +251,16 @@
                         <h4 class="font-semibold text-lg">Backend</h4>
                         <div class="space-y-2">
                             <div class="skill-tag">
-                                <i class="fab fa-node-js text-green-500"></i>
-                                Node.js
+                                <i class="fab fa-python text-green-500"></i>
+                                Python
                             </div>
                             <div class="skill-tag">
-                                <i class="fas fa-server text-gray-500"></i>
-                                Express.js
+                                <i class="fas  text-gray-500"> DJ</i>
+                                Django
                             </div>
                             <div class="skill-tag">
                                 <i class="fas fa-database text-blue-500"></i>
-                                MongoDB
+                                MYSQL
                             </div>
                             <div class="skill-tag">
                                 <i class="fas fa-fire text-orange-500"></i>
@@ -316,20 +318,21 @@
                         <div class="card p-6">
                             <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
                                 <div>
-                                    <h4 class="text-xl font-bold">Senior Frontend Developer</h4>
-                                    <p class="opacity-75">Tech Innovations Inc.</p>
+                                    <h4 class="text-xl font-bold">Full Stack Engineer</h4>
+                                    <p class="opacity-75">Chakshu Info Tech</p>
                                 </div>
-                                <span class="text-indigo-500 font-medium">2020 - Present</span>
+                                <span class="text-indigo-500 font-medium">2024 - Present</span>
                             </div>
                             <p class="opacity-75 mb-4 leading-relaxed">
-                                Led a team of 5 developers in creating responsive web applications. Implemented modern best practices and improved performance metrics by 40%. Mentored junior developers and conducted code reviews.
+                                Built and maintained full-stack web applications using Python, Django, and modern frontend technologies. Delivered responsive UI, optimized backend performance, and implemented scalable APIs. Collaborated cross-functionally and contributed to CI/CD and Agile workflows.
+                                
                             </p>
                             <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">JavaScript</span>
                                 <span class="skill-tag">React.js</span>
-                                <span class="skill-tag">TypeScript</span>
-                                <span class="skill-tag">Redux</span>
-                                <span class="skill-tag">Tailwind CSS</span>
-                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Django</span>
+                                <span class="skill-tag">MYSQL</span>
                             </div>
                         </div>
                     </div>
@@ -340,19 +343,19 @@
                         <div class="card p-6">
                             <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
                                 <div>
-                                    <h4 class="text-xl font-bold">Frontend Developer</h4>
-                                    <p class="opacity-75">WebSolutions Co.</p>
+                                    <h4 class="text-xl font-bold">Backend Developer</h4>
+                                    <p class="opacity-75">Tech Innovations Inc.</p>
                                 </div>
-                                <span class="text-indigo-500 font-medium">2018 - 2020</span>
+                                <span class="text-indigo-500 font-medium">2023 - 2024</span>
                             </div>
                             <p class="opacity-75 mb-4 leading-relaxed">
-                                Developed and maintained client websites and applications. Collaborated with design team to implement pixel-perfect, responsive layouts. Optimized applications for maximum speed and scalability.
+                                Engineered scalable backend systems using Python and Django, developed RESTful APIs, and optimized database performance for high availability. Collaborated with cross-functional teams to ensure seamless integration and delivered robust, maintainable, and production-ready applications.
                             </p>
                             <div class="flex flex-wrap gap-2">
-                                <span class="skill-tag">Vue.js</span>
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">SASS</span>
-                                <span class="skill-tag">Webpack</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">MYSQL</span>
+                                <span class="skill-tag">Django</span>
+                                <span class="skill-tag">Systems designs</span>
                                 <span class="skill-tag">REST APIs</span>
                             </div>
                         </div>
@@ -365,19 +368,19 @@
                             <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
                                 <div>
                                     <h4 class="text-xl font-bold">Junior Web Developer</h4>
-                                    <p class="opacity-75">Digital Agency XYZ</p>
+                                    <p class="opacity-75">WebSolutions Co. </p>
                                 </div>
-                                <span class="text-indigo-500 font-medium">2016 - 2018</span>
+                                <span class="text-indigo-500 font-medium">2022 - 2023</span>
                             </div>
                             <p class="opacity-75 mb-4 leading-relaxed">
-                                Created and maintained websites for various clients using modern web technologies. Assisted in troubleshooting cross-browser compatibility issues and implementing responsive designs.
+                               Developed and maintained client websites using modern web technologies. Implemented responsive, mobile-first designs and assisted in resolving cross-browser compatibility issues to ensure consistent user experiences.
                             </p>
                             <div class="flex flex-wrap gap-2">
                                 <span class="skill-tag">HTML5</span>
                                 <span class="skill-tag">CSS3</span>
                                 <span class="skill-tag">jQuery</span>
                                 <span class="skill-tag">Bootstrap</span>
-                                <span class="skill-tag">PHP</span>
+                                <span class="skill-tag">JavaScript</span>
                             </div>
                         </div>
                     </div>
@@ -788,7 +791,7 @@
                             <div class="grid md:grid-cols-2 gap-6">
                                 <div>
                                     <label class="block font-medium mb-2 opacity-75">Your Name</label>
-                                    <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:outline-none focus:border-indigo-500 transition-colors" placeholder="John Doe" required>
+                                    <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:outline-none focus:border-indigo-500 transition-colors" placeholder="Prakash Singh" required>
                                 </div>
                                 <div>
                                     <label class="block font-medium mb-2 opacity-75">Your Email</label>
@@ -823,9 +826,10 @@
             <div class="text-center">
                 <div class="mb-6">
                     <h3 class="text-2xl font-bold">
-                        <span class="text-gradient">Prakash Singh</span>
+                       <img src="images/logo.png" alt="logo"  height="40px" class="logo" style="width: 120px; margin: auto;"style="padding: 0;margin: 0;">
+                    <img src="images/logo1.png" alt="logo"  height="40px" class="logo1" style="width: 120px; margin: auto;">
                     </h3>
-                    <p class="opacity-75 mt-2">Full Stack Engineer</p>
+                    <p class="opacity-75 mt-2" style="color: blue; font-weight: bold">Full Stack Engineer</p>
                 </div>
                 
                 <div class="flex justify-center space-x-6 mb-8">
